@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/basePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/homePageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/homePageRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/loginPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/loginPageRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/loginStepsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/CustomWait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-data/testData.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="BDD Project with first test script" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +46,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/test/java",
     "onboarding.tips.debug.path": "C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/main/java/com/cucumber/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -140,6 +118,15 @@
       <option name="presentableId" value="Default" />
       <updated>1771117870730</updated>
     </task>
+    <task id="LOCAL-00001" summary="BDD Project with first test script">
+      <option name="closed" value="true" />
+      <created>1771295254329</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771295254329</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +142,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="BDD Project with first test script" />
+    <option name="LAST_COMMIT_MESSAGE" value="BDD Project with first test script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
