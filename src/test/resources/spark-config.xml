@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <documentTitle>BDD Automation Report</documentTitle>
+        <reportName>Execution Report</reportName>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        <timelineEnabled>true</timelineEnabled>
+    </configuration>
+</extentreports>
