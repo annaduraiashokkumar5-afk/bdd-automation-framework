@@ -25,7 +25,7 @@ public class loginStepsTest {
         Map<String, String> testData;
 
     loginPageActions loginpageActions = new loginPageActions(Hooks.driver);
-    homePageActions homepageActions = new homePageActions();
+    homePageActions homepageActions = new homePageActions(Hooks.driver);
 
     @Given("user is on login page")
     public void user_is_on_login_page() throws InterruptedException {
@@ -49,6 +49,7 @@ public class loginStepsTest {
 
     @Then("user should navigate to Homepage")
     public void verify_login_success(){
-        //Assert.assertEquals(homepageActions.bankName.isDisplayed(),"Successfully navigated to Homepage");
+        //Assert.assertEquals(Hooks.driver.getTitle(), "GTPL Bank Manager HomePage");
+        Assert.assertEquals(homepageActions.validateHomePageBankName(), "Gtpl Bank");
     }
 }

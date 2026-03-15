@@ -1,13 +1,11 @@
 package pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import ai.AIPageFactory;
 import utils.ConfigReader;
 import utils.CustomWait;
+
 
 import java.time.Duration;
 
@@ -20,7 +18,7 @@ public class basePage {
     public basePage(WebDriver driver) {
         this.driver = driver;
         configReader = new ConfigReader();
-        PageFactory.initElements(driver, this);
+        AIPageFactory.initElements(driver,this);
         this.wait = new CustomWait(driver, Duration.ofSeconds(configReader.getGlobalWaitValue()));
     }
 

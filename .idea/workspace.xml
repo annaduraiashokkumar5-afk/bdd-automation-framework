@@ -4,17 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="BDD Project changes in Hooks.java">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/spark-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/SparkReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshots/Valid to login to bank website_Passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Passed.png" afterDir="false" />
+    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="Added Extent Report">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/AIDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/AIPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/FailureAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/GPTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/selfhealing/AIElementLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/selfhealing/AIElementLocatorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/selfhealing/XPathHealer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/homePageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Failed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/basePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/basePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/homePageActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/homePageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePageRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/loginPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/loginPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/loginPageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/loginPageRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/loginStepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/loginStepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CustomWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CustomWait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data/testData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data/testData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/Valid to login to bank website_Passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Passed.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Passed.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/ai/GPTService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -45,21 +65,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.TestRunner.executor": "Run",
-    "TestNG.runner.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/test/java",
-    "onboarding.tips.debug.path": "C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/main/java/com/cucumber/Main.java",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.runner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/test/java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ashok/IdeaProjects/CucumberDemoProject/src/main/java/com/cucumber/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ashok\IdeaProjects\CucumberDemoProject\src\test\java" />
@@ -70,6 +90,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ashok\IdeaProjects\CucumberDemoProject\src\test\java" />
       <recent name="C:\Users\ashok\IdeaProjects\CucumberDemoProject\src\main" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ai_selfhealing" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestRunner">
@@ -153,8 +176,26 @@
       <option name="project" value="LOCAL" />
       <updated>1771301110373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Extent Report">
+      <option name="closed" value="true" />
+      <created>1771307797516</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771307797516</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.cucumber:cucumber-java" />
+    <option featureType="dependencySupport" implementationName="java:junit:junit" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.testng:testng" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -171,7 +212,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="BDD Project with first test script" />
     <MESSAGE value="BDD Project changes in Hooks.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="BDD Project changes in Hooks.java" />
+    <MESSAGE value="Added Extent Report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Extent Report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
