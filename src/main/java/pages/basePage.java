@@ -3,6 +3,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import ai.AIPageFactory;
+import org.openqa.selenium.support.PageFactory;
 import utils.ConfigReader;
 import utils.CustomWait;
 
@@ -18,7 +19,7 @@ public class basePage {
     public basePage(WebDriver driver) {
         this.driver = driver;
         configReader = new ConfigReader();
-        AIPageFactory.initElements(driver,this);
+        PageFactory.initElements(driver,this);
         this.wait = new CustomWait(driver, Duration.ofSeconds(configReader.getGlobalWaitValue()));
     }
 

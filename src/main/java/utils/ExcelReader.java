@@ -44,5 +44,34 @@ public class ExcelReader {
 
         return dataMap;
     }
+
+    public static List<String> getColumnValues(String filePath, String sheetName, int columnIndex) {
+        List<String> columnData = new ArrayList<>();
+
+        try (FileInputStream fis = new FileInputStream(filePath);
+             Workbook workbook = new XSSFWorkbook(fis)) {
+
+            Sheet sheet = workbook.getSheet(sheetName);
+
+            if (sheet == null) {
+                System.out.println("Sheet not found");
+                return columnData;
+            }
+
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {   // start from 1 to skip header
+                Row row = sheet.getRow(i);
+
+                if (row != null) {
+                    Cell cell = row.getCell(columnIndex, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                    columnData.add(cell.toString());
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return columnData;
+    }
     }
 

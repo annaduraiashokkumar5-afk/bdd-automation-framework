@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class CustomWait {
 
@@ -22,6 +23,15 @@ public class CustomWait {
     public void waitForVisibilityOfElement(WebElement element) {
         try{
             wait.until(ExpectedConditions.visibilityOf(element));
+        }catch(TimeoutException e) {
+            //e.printStackTrace();
+            setElementPresentState(false);
+            System.err.println("Element is not visible after waiting : " +e.getMessage());
+        }
+    }
+    public void waitForVisibilityOfElement(List<WebElement> element) {
+        try{
+            wait.until(ExpectedConditions.visibilityOf((WebElement) element));
         }catch(TimeoutException e) {
             //e.printStackTrace();
             setElementPresentState(false);
