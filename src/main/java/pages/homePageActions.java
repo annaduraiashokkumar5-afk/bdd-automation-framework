@@ -1,6 +1,6 @@
 package pages;
 
-import ai.GeminiService;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
