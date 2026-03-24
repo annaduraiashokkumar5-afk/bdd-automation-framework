@@ -19,9 +19,9 @@ public class Hooks {
     public void setUp() {
         System.out.println("Before Hook running");
         ChromeOptions options = new ChromeOptions();
-        /*options.addArguments("--headless=new");
+        options.addArguments("--headless=new");
         options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1920,1080");*/
+        options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
@@ -50,7 +50,9 @@ public class Hooks {
                 System.out.println("Screenshot saved at: " + screenshotPath);
 
                 // 4️⃣ Attach screenshot for Extent using path (important)
-                scenario.attach(FileUtils.readFileToByteArray(destFile), "image/png", status + "_Screenshot");
+               // scenario.attach(FileUtils.readFileToByteArray(destFile), "image/png", status + "_Screenshot");
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
 
             } catch (Exception e) {
                 e.printStackTrace();

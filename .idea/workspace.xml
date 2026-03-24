@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="Added AI features but need to be tested">
+    <list default="true" id="eee751e5-869c-48b8-b699-cab8d7c46f4e" name="Changes" comment="Added test scripts in homePageTest">
       <change afterPath="$PROJECT_DIR$/src/main/java/ai/DeepSeekService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ai/GeminiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/homePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/homepage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/extent.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Undefined.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/screenshots/Validating_menu_list_and_heading_loop_Failed.png" afterDir="false" />
@@ -17,18 +16,11 @@
       <change afterPath="$PROJECT_DIR$/test-output/screenshots/Validating_menu_list_and_heading_loop_Undefined.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test-output/screenshots/Validating_menulist_and_heading_loop_Undefined.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/AIDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/AIDataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/FailureAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/FailureAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/GPTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/GPTService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/selfhealing/XPathHealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/selfhealing/XPathHealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/basePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/basePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/homePageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/homePageRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CustomWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CustomWait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data/testData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data/testData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Failed.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/screenshots/Valid_to_login_to_bank_website_Failed.png" afterDir="false" />
@@ -257,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773610114121</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added test scripts in homePageTest">
+      <option name="closed" value="true" />
+      <created>1774220139315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774220139315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -286,7 +286,8 @@
     <MESSAGE value="BDD Project with first test script" />
     <MESSAGE value="BDD Project changes in Hooks.java" />
     <MESSAGE value="Added Extent Report" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Extent Report" />
+    <MESSAGE value="Added test scripts in homePageTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test scripts in homePageTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
