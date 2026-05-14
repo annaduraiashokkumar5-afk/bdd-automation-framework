@@ -1,4 +1,6 @@
 package hooks;
+import io.cucumber.java.AfterStep;
+import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -9,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.cucumber.java.Scenario;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
@@ -25,41 +28,24 @@ public class Hooks {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
+    @AfterStep
+    public void addScreenshotAfterEachStep() {
+
+        byte[] screenshot = ((TakesScreenshot) driver)
+                .getScreenshotAs(OutputType.BYTES);
+
+        Allure.addAttachment(
+                "Step Screenshot",
+                "image/png",
+                new ByteArrayInputStream(screenshot),
+                ".png"
+        );
+    }
 
     @After
     public void tearDown(Scenario scenario) throws IOException {
-
-        if (driver != null) {
-            String status = scenario.getStatus().name(); // PASSED/FAILED
-            status = status.substring(0,1).toUpperCase() + status.substring(1).toLowerCase();
-
-            try {
-                // 1️⃣ Take screenshot as File
-                File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-                // 2️⃣ Define path
-                String screenshotPath = System.getProperty("user.dir")
-                        + "/test-output/screenshots/"
-                        + scenario.getName().replaceAll(" ", "_") + "_" + status + ".png";
-
-                File destFile = new File(screenshotPath);
-
-                // 3️⃣ Copy to destination
-                FileUtils.copyFile(srcFile, destFile);
-
-                System.out.println("Screenshot saved at: " + screenshotPath);
-
-                // 4️⃣ Attach screenshot for Extent using path (important)
-               // scenario.attach(FileUtils.readFileToByteArray(destFile), "image/png", status + "_Screenshot");
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenshot, "image/png", scenario.getName());
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            driver.quit();
-        }
+                driver.quit();
+    }
 
     }
-}
+
